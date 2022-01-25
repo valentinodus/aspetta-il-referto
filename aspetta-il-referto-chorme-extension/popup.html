@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aspettando il referto</title>
+	<style>
+		label {
+			display: block;
+			padding: 10px 5px;
+		}
+	</style>
+
+	<script src="popup.js"></script>
+
+</head>
+<body>
+	<div>
+
+		<h1>Aspettando il referto</h1>
+
+		<a href="https://mdb.ulss.tv.it/Talete/login.jsf" target="_blank">Vai al sito</a>
+	 
+		<label for="codiceFiscale">CF:
+			<input type="text" name="codiceFiscale" id="codiceFiscale">
+		</label>
+	
+	
+		<label for="idReferto">ID Referto:
+			<input type="text" name="idReferto" id="idReferto">
+		</label>
+
+		<label for="minuti">Intervallo:
+
+			<input type="range" id="minuti" name="minuti" min="1" max="30">
+			<div id="minutiDisplay"></div>
+		</label>
+
+		<label for="emailNotifica">Email Notifica:
+			<input type="email" name="emailNotifica" id="emailNotifica">
+		</label>
+
+	</div>
+</body>
+</html>
+
